@@ -41,12 +41,12 @@ jobs:
       - name: Install with Maven
         run: mvn clean install
       - name: Test
-        run: mvn test --batch-mode
+        run: mvn test --batch-mode -pl pricefxSrc
       - name: Upload Test Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: test-reports
-          path: ./target/surefire-reports/TEST-*.xml
+          path: ./pricefxSrc/target/surefire-reports/TEST-*.xml
           retention-days: 14
       - name: Deploy with Maven
         env:
@@ -54,7 +54,7 @@ jobs:
           PRICEFX_PARTITION: ${{ secrets.PRICEFX_PARTITION }}
           PRICEFX_USERNAME: ${{ secrets.PRICEFX_USERNAME }}
           PRICEFX_PASSWORD: ${{ secrets.PRICEFX_PASSWORD }}
-        run: mvn --batch-mode --update-snapshots -pl pricefxSrc --settings .maven/settings.xml -P pricefx-partition clean install net.pricefx.learn:pricefx-stream-maven-plugin:pricefx-deploy-all
+        run: mvn --batch-mode --update-snapshots -pl pricefxSrc --settings .maven/settings.xml -P pricefx-partition net.pricefx.learn:pricefx-stream-maven-plugin:pricefx-deploy-all
       - name: Save Maven cache
         uses: skjolber/maven-cache-github-action@v1
         with:
