@@ -32,6 +32,8 @@ jobs:
           distribution: 'adopt'
       - name: Install with Maven
         run: mvn clean install
+      - name: Printenv
+        run: printenv
       - name: Deploy with Maven
         env:
           PRICEFX_URL: '${{ secrets.PRICEFX_URL }}'
