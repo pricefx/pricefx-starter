@@ -1,4 +1,5 @@
 # Delete the .github/ folder if you're not using GitHub
+# To use, define an environment "Develop" and set the secrets PRICEFX_URL, PRICEFX_PARTITION, PRICEFX_USERNAME, PRICEFX_PASSWORD
 name: CI
 
 # Controls when the workflow will run
@@ -19,13 +20,11 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  deploy:
+  deploy-develop:
     # Do not use pricefx-stream-maven-plugin in your production build.
     #  Instead, use pfxpackage. See .gitlab-ci.yml
     runs-on: ubuntu-latest
     environment: Develop
-    env:
-      PRICEFX_URL_2: ${{ secrets.PRICEFX_URL }}
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
@@ -33,8 +32,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Printenv
-        run: printenv
       - name: Install with Maven
         run: mvn clean install
       - name: Deploy with Maven
