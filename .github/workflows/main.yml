@@ -23,6 +23,8 @@ jobs:
     # Do not use pricefx-stream-maven-plugin in your production build.
     #  Instead, use pfxpackage. See .gitlab-ci.yml
     runs-on: ubuntu-latest
+    env:
+      PRICEFX_URL_2: ${{ secrets.PRICEFX_URL }}
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
@@ -33,9 +35,6 @@ jobs:
       - name: Install with Maven
         run: mvn clean install
       - name: Printenv
-        env:
-          PRICEFX_URL_1: '${{ secrets.PRICEFX_URL }}'
-          PRICEFX_URL_2: ${{ secrets.PRICEFX_URL }}
         run: printenv
       - name: Deploy with Maven
         env:
