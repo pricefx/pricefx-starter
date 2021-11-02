@@ -5,39 +5,15 @@
 >
     <profiles>
         <profile>
-            <id>develop</id>
+            <id>pricefx-partition</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <pricefx-stream.url>${DEV_URL}</pricefx-stream.url>
-                <pricefx-stream.partition>${DEV_PARTITION}</pricefx-stream.partition>
-                <pricefx-stream.username>${DEV_USERNAME}</pricefx-stream.username>
-                <pricefx-stream.password>${DEV_PASSWORD}</pricefx-stream.password>
-            </properties>
-        </profile>
-        <profile>
-            <id>qa</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <pricefx-stream.url>${QA_URL}</pricefx-stream.url>
-                <pricefx-stream.partition>${QA_PARTITION}</pricefx-stream.partition>
-                <pricefx-stream.username>${QA_USERNAME}</pricefx-stream.username>
-                <pricefx-stream.password>${QA_PASSWORD}</pricefx-stream.password>
-            </properties>
-        </profile>
-        <profile>
-            <id>production</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <pricefx-stream.url>${env.PROD_URL}</pricefx-stream.url>
-                <pricefx-stream.partition>${env.PROD_PARTITION}</pricefx-stream.partition>
-                <pricefx-stream.username>${env.PROD_USERNAME}</pricefx-stream.username>
-                <pricefx-stream.password>${env.PROD_PASSWORD}</pricefx-stream.password>
+                <pricefx-stream.url>${PRICEFX_URL}</pricefx-stream.url>
+                <pricefx-stream.partition>${PRICEFX_PARTITION}</pricefx-stream.partition>
+                <pricefx-stream.username>${PRICEFX_USERNAME}</pricefx-stream.username>
+                <pricefx-stream.password>${PRICEFX_PASSWORD}</pricefx-stream.password>
             </properties>
         </profile>
     </profiles>
