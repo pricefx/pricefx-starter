@@ -32,14 +32,14 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Install with Maven
-        run: mvn clean install
       - name: Printenv
         run: printenv
+      - name: Install with Maven
+        run: mvn clean install
       - name: Deploy with Maven
         env:
-          PRICEFX_URL: '${{ secrets.PRICEFX_URL }}'
-          PRICEFX_PARTITION: '${{ secrets.PRICEFX_PARTITION }}'
-          PRICEFX_USERNAME: '${{ secrets.PRICEFX_USERNAME }}'
-          PRICEFX_PASSWORD: '${{ secrets.PRICEFX_PASSWORD }}'
+          PRICEFX_URL: ${{ secrets.PRICEFX_URL }}
+          PRICEFX_PARTITION: ${{ secrets.PRICEFX_PARTITION }}
+          PRICEFX_USERNAME: ${{ secrets.PRICEFX_USERNAME }}
+          PRICEFX_PASSWORD: ${{ secrets.PRICEFX_PASSWORD }}
         run: mvn --batch-mode --update-snapshots -pl pricefxSrc --settings .maven/settings.xml -P pricefx-partition clean install net.pricefx.learn:pricefx-stream-maven-plugin:pricefx-deploy-all
