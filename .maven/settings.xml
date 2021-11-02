@@ -1,0 +1,20 @@
+<settings
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"
+        xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+    <profiles>
+        <profile>
+            <id>pricefx-partition</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <pricefx-stream.url>${PRICEFX_URL}</pricefx-stream.url>
+                <pricefx-stream.partition>${PRICEFX_PARTITION}</pricefx-stream.partition>
+                <pricefx-stream.username>${PRICEFX_USERNAME}</pricefx-stream.username>
+                <pricefx-stream.password>${PRICEFX_PASSWORD}</pricefx-stream.password>
+            </properties>
+        </profile>
+    </profiles>
+</settings>

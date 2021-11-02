@@ -1,0 +1,11 @@
+{
+  "fieldName" : "attribute2",
+  "fieldType" : 1,
+  "formatType" : "PERCENT",
+  "label" : "RedAlert",
+  "labelTranslations" : {
+    "" : "Red Alert"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

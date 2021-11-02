@@ -1,0 +1,10 @@
+{
+  "cssProperties" : "background-color:#00CCFF",
+  "fieldType" : 2,
+  "label" : "ProductId",
+  "labelTranslations" : {
+    "" : "Product Id"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

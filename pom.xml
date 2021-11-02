@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.mycompany.project</groupId>
+    <artifactId>pricefx-starter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Pricefx Starter</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>pricefxSrc</module>
+    </modules>
+
+    <properties>
+        <!-- pricefx-stream plugin-->
+        <pricefx-stream.includeMetadata>true</pricefx-stream.includeMetadata>
+        <pricefx-stream.includeData>true</pricefx-stream.includeData>
+        <pricefx-stream.includeDocuments>true</pricefx-stream.includeDocuments>
+
+        <!-- groovydoc -->
+        <groovy.version>2.4.15</groovy.version>
+
+        <!-- testing -->
+        <junit.version>4.12</junit.version>
+        <spock.version>1.1-groovy-2.4</spock.version>
+
+        <!-- maven -->
+        <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
+
+        <!-- JDK -->
+        <source.jdk>11</source.jdk>
+        <target.jdk>11</target.jdk>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Pricefx Stream Maven Plugin -->
+        <pricefx-stream.groupId>net.pricefx.learn</pricefx-stream.groupId>
+        <pricefx-stream.artifactId>pricefx-stream-maven-plugin</pricefx-stream.artifactId>
+        <pricefx-stream.version>1.0-SNAPSHOT</pricefx-stream.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>${pricefx-stream.groupId}</groupId>
+            <artifactId>${pricefx-stream.artifactId}</artifactId>
+            <version>${pricefx-stream.version}</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>Default repo</id>
+            <url>http://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>Pricefx public maven artifacts</id>
+            <url>https://nexus.pricefx.net/tools</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+</project>

@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "ProductGroup",
+  "labelTranslations" : {
+    "" : "Product Group"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

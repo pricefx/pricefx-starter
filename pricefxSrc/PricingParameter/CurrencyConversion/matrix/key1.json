@@ -1,0 +1,10 @@
+{
+  "fieldName" : "key1",
+  "fieldType" : 2,
+  "label" : "CurrencyFrom",
+  "labelTranslations" : {
+    "" : "Currency From"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

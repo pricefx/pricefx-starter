@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "BusinessUnit",
+  "labelTranslations" : {
+    "" : "Business Unit"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "BuyingGroup",
+  "labelTranslations" : {
+    "" : "Buying Group"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

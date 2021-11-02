@@ -1,0 +1,10 @@
+{
+  "fieldName" : "attribute1",
+  "fieldType" : 2,
+  "label" : "CountryName",
+  "labelTranslations" : {
+    "" : "Country Name"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

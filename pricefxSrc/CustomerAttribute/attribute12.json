@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "IncoTerms",
+  "labelTranslations" : {
+    "" : "Inco Terms"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

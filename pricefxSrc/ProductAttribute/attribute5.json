@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "Size",
+  "labelTranslations" : {
+    "" : "Size"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

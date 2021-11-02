@@ -1,0 +1,10 @@
+{
+  "fieldName" : "name",
+  "fieldType" : 2,
+  "label" : "ProductLifeCycle",
+  "labelTranslations" : {
+    "" : "Product Life Cycle"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,32 @@
+
+# ==== Pricefx Studio ====
+config.json
+.info
+# Pricefx source: presets for inputs
+**/CalculationLogic/*/parameters/
+**/WorkflowFormula/*/parameters/
+# Pricefx source: calculation execution results
+**/CalculationLogic/*/results/
+**/WorkflowFormula/*/results/
+# Studio adds a debug script here
+src/
+
+
+# ====== Gradle ========
+gradle.properties
+# Ignore Gradle project-specific cache directory
+.gradle
+# Gradle build directory
+build/
+
+
+# ====== Maven =========
+#
+target/
+
+# ====== IntelliJ =======
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
+out/
+.idea/
+*.ipr
+*.iml

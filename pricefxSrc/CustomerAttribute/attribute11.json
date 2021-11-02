@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "PaymentTerms",
+  "labelTranslations" : {
+    "" : "Payment Terms"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,10 @@
+{
+  "fieldName" : "attribute7",
+  "fieldType" : 2,
+  "label" : "IntermediateRegionCode",
+  "labelTranslations" : {
+    "" : "Intermediate Region Code"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

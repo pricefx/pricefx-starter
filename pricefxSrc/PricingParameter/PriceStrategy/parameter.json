@@ -1,0 +1,11 @@
+{
+  "folder" : "Final Project",
+  "hideWarnings" : false,
+  "isPlasma" : false,
+  "label" : "Price Strategy",
+  "status" : "ACTIVE",
+  "type" : "MATRIX",
+  "uniqueName" : "PriceStrategy",
+  "validAfter" : "2010-01-01",
+  "valueType" : "MATRIX"
+}

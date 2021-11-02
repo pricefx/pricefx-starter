@@ -1,0 +1,10 @@
+{
+  "description" : "",
+  "fieldType" : 2,
+  "label" : "ProductId",
+  "labelTranslations" : {
+    "" : "ProductId"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,36 +1,84 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+# Delete the .github/ folder if you're not using GitHub
+# To use, define an environment "Develop" and set the secrets PRICEFX_URL, PRICEFX_PARTITION, PRICEFX_USERNAME, PRICEFX_PASSWORD
+name: Test & Deploy
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches:
+      - develop
+      - qa
+      - main
   pull_request:
-    branches: [ main ]
-
+    branches:
+      - develop
+      - qa
+      - main
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  test:
+    name: Test
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Restore Maven cache
+        uses: skjolber/maven-cache-github-action@v1
+        with:
+          step: restore
+      - name: Install with Maven
+        run: mvn clean install
+      - name: Test
+        run: mvn test --batch-mode -pl pricefxSrc
+      - name: Upload Test Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-reports
+          path: ./pricefxSrc/target/surefire-reports/TEST-*.xml
+          retention-days: 14
+      - name: Save Maven cache
+        uses: skjolber/maven-cache-github-action@v1
+        with:
+          step: save
+  deploy-develop:
+    name: Deploy to Pricefx Partition
+    # Do not use pricefx-stream-maven-plugin in qa or production!
+    #  Instead, use pfxpackage. See .gitlab-ci.yml
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    environment: Develop
+    needs: test # Only run if the test completed
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Restore Maven cache
+        uses: skjolber/maven-cache-github-action@v1
+        with:
+          step: restore
+      - name: Install with Maven
+        run: mvn clean install
+      - name: Deploy with Maven
+        env:
+          PRICEFX_URL: ${{ secrets.PRICEFX_URL }}
+          PRICEFX_PARTITION: ${{ secrets.PRICEFX_PARTITION }}
+          PRICEFX_USERNAME: ${{ secrets.PRICEFX_USERNAME }}
+          PRICEFX_PASSWORD: ${{ secrets.PRICEFX_PASSWORD }}
+        run: mvn --batch-mode --update-snapshots -pl pricefxSrc --settings .maven/settings.xml -P pricefx-partition net.pricefx.learn:pricefx-stream-maven-plugin:pricefx-deploy-all
+      - name: Save Maven cache
+        uses: skjolber/maven-cache-github-action@v1
+        with:
+          step: save

@@ -1,0 +1,20 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementName" : "converter",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "library",
+  "inputDescriptors" : [ ],
+  "label" : "Currency Library",
+  "status" : "ACTIVE",
+  "uniqueName" : "Currency",
+  "validAfter" : "2000-01-01"
+}

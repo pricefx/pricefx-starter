@@ -1,0 +1,11 @@
+{
+  "folder" : "Food",
+  "hideWarnings" : false,
+  "isPlasma" : false,
+  "label" : "Currency Conversion",
+  "status" : "ACTIVE",
+  "type" : "MATRIX",
+  "uniqueName" : "CurrencyConversion",
+  "validAfter" : "2010-01-01",
+  "valueType" : "MATRIX2"
+}
