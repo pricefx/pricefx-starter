@@ -34,10 +34,10 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <pricefx-stream.url>${PROD_URL}</pricefx-stream.url>
-                <pricefx-stream.partition>${PROD_PARTITION}</pricefx-stream.partition>
-                <pricefx-stream.username>${PROD_USERNAME}</pricefx-stream.username>
-                <pricefx-stream.password>${PROD_PASSWORD}</pricefx-stream.password>
+                <pricefx-stream.url>${env.PROD_URL}</pricefx-stream.url>
+                <pricefx-stream.partition>${env.PROD_PARTITION}</pricefx-stream.partition>
+                <pricefx-stream.username>${env.PROD_USERNAME}</pricefx-stream.username>
+                <pricefx-stream.password>${env.PROD_PASSWORD}</pricefx-stream.password>
             </properties>
         </profile>
     </profiles>
