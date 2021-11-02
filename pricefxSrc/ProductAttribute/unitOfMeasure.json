@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "UnitOfMeasure",
+  "labelTranslations" : {
+    "" : "Unit Of Measure"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

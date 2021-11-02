@@ -1,0 +1,60 @@
+# Delete this file if you're not using GitLab
+image: maven:3.6-jdk-11
+
+variables:
+  MAVEN_CLI_OPTS: "--batch-mode"
+  MAVEN_OPTS: -Dmaven.repo.local=/cache/.m2/repository
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+    - mvn test $MAVEN_CLI_OPTS
+  artifacts:
+    reports:
+      junit:
+        - ./target/surefire-reports/TEST-*.xml
+
+.deploy:
+  stage: deploy
+  when: manual
+  image: cregistry.pricefx.eu/tools/pfxpackage
+  script:
+    # PFX_USER & PFX_PASS: should be set as masked variable in project's settings:
+    # Gitlab -> Settings -> CI/CD -> Variable.
+    # Never ever put it here.
+    - pfxpackage -import -timeout 60 -url ${PFX_URL} -user ${PFX_USERNAME} -password ${PFX_PASSWORD} -partition ${PFX_PARTITION} -from ./bundle
+
+deploy-dev:
+  extends: .deploy
+  only:
+    - dev
+    - develop
+  variables:
+    PFX_URL: $DEV_URL
+    PFX_PARTITION: $DEV_PARTITION
+    PFX_USERNAME: $DEV_USERNAME
+    PFX_PASSWORD: $DEV_PASSWORD
+
+deploy-qa:
+  extends: .deploy
+  only:
+    - qa
+  variables:
+    PFX_URL: $QA_URL
+    PFX_PARTITION: $QA_PARTITION
+    PFX_USERNAME: $QA_USERNAME
+    PFX_PASSWORD: $QA_PASSWORD
+
+deploy-prod:
+  extends: .deploy
+  only:
+    - master
+  variables:
+    PFX_URL: $PROD_URL
+    PFX_PARTITION: $PROD_PARTITION
+    PFX_USERNAME: $PROD_USERNAME
+    PFX_PASSWORD: $PROD_PASSWORD

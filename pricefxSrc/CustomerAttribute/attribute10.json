@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "SalesOrg",
+  "labelTranslations" : {
+    "" : "Sales Org"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,11 @@
+{
+  "folder" : "Final Project",
+  "hideWarnings" : false,
+  "isPlasma" : false,
+  "label" : "Regional Setting",
+  "status" : "ACTIVE",
+  "type" : "MATRIX",
+  "uniqueName" : "Region",
+  "validAfter" : "2010-01-01",
+  "valueType" : "MATRIX"
+}

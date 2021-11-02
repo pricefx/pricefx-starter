@@ -1,0 +1,10 @@
+{
+  "hideWarnings" : false,
+  "isPlasma" : false,
+  "label" : "Product Cost",
+  "status" : "ACTIVE",
+  "type" : "MATRIX",
+  "uniqueName" : "ProductCost",
+  "validAfter" : "2010-01-01",
+  "valueType" : "MATRIX2"
+}

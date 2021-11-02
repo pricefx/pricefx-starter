@@ -1,0 +1,10 @@
+{
+  "fieldName" : "attribute3",
+  "fieldType" : 2,
+  "label" : "Date",
+  "labelTranslations" : {
+    "" : "Date (yyyy-MM-dd)"
+  },
+  "readOnly" : false,
+  "requiredField" : true
+}

@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "SalesPerson",
+  "labelTranslations" : {
+    "" : "Sales Person"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,5 @@
+key1,key2,key3,attribute1,attribute2,attribute3,attribute4,attribute5,attribute6,attribute7,attribute8,attribute9,attribute10,attribute11,attribute12,attribute13,attribute14,attribute15,attribute16,attribute17,attribute18,attribute19,attribute20,attribute21,attribute22,attribute23,attribute24,attribute25,attribute26,attribute27,attribute28,attribute29,attribute30
+EUR,USD,2010-01-01,2019-12-31,1.09,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUR,USD,2020-01-01,2029-12-31,1.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+USD,EUR,2010-01-01,2019-12-31,0.91743119266055,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+USD,EUR,2020-01-01,2029-12-31,0.909090909090909,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "CustomerName",
+  "labelTranslations" : {
+    "" : "Customer Name"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

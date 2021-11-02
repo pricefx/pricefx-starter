@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "Service",
+  "labelTranslations" : {
+    "" : "Service"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

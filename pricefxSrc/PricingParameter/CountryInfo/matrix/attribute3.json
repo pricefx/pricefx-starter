@@ -1,0 +1,10 @@
+{
+  "fieldName" : "attribute3",
+  "fieldType" : 2,
+  "label" : "SubRegion",
+  "labelTranslations" : {
+    "" : "Sub Region"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

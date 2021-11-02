@@ -1,0 +1,11 @@
+{
+  "fieldName" : "attribute3",
+  "fieldType" : 1,
+  "formatType" : "PERCENT",
+  "label" : "YellowAlert",
+  "labelTranslations" : {
+    "" : "Yellow Alert"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

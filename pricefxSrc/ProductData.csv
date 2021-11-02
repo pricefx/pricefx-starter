@@ -1,0 +1,59 @@
+sku,label,unitOfMeasure,currency,attribute1,attribute2,attribute3,attribute4,attribute5,attribute6
+MB-0001,Meatball Bl,EA,EUR,Beef,Meatball,A,high,Large,Growth
+MB-0002,Meatball BM,EA,EUR,Beef,Meatball,B,low,Medium,Decline
+MB-0003,Meatball BS,EA,EUR,Beef,Meatball,C,medium,Small,Growth
+MB-0004,Meatball PS,EA,EUR,Pork,Meatball,B,medium,Small,Growth
+MB-0005,Meatball PM,EA,EUR,Pork,Meatball,B,low,Medium,Growth
+MB-0006,Meatball Pl,EA,EUR,Pork,Meatball,A,low,Large,Maturity
+MB-0007,Meatball LS,EA,EUR,Lamb,Meatball,B,high,Small,Maturity
+MB-0008,Meatball LM,EA,EUR,Lamb,Meatball,B,low,Medium,Maturity
+MB-0009,Meatball Ll,EA,EUR,Lamb,Meatball,A,low,Large,Decline
+MB-0010,Meatball TS,EA,EUR,Tofu,Meatball,A,low,Small,Decline
+MB-0011,Meatball TM,EA,EUR,Tofu,Meatball,A,low,Medium,Maturity
+MB-0012,Meatball Tl,EA,EUR,Tofu,Meatball,C,high,Large,Maturity
+MB-0013,Meatball MS BxP,EA,EUR,Mix,Meatball,C,low,Small,Growth
+MB-0014,Meatball MM BxP,EA,EUR,Mix,Meatball,C,low,Medium,Growth
+MB-0015,Meatball Ml BxP,EA,EUR,Mix,Meatball,B,low,Large,Maturity
+MB-0016,Meatball MS BxL,EA,EUR,Mix,Meatball,B,low,Small,Decline
+MB-0017,Meatball MM BxL,EA,EUR,Mix,Meatball,A,low,Medium,Growth
+MB-0018,Meatball Ml BxL,EA,EUR,Mix,Meatball,B,low,Large,Growth
+MB-0019,Meatball MS BxPxL,EA,EUR,Mix,Meatball,B,medium,Small,Maturity
+MB-0020,Meatball MM BxPxL,EA,EUR,Mix,Meatball,A,low,Medium,Maturity
+MB-0021,Meatball Ml BxPxL,EA,EUR,Mix,Meatball,C,low,Large,Maturity
+MB-0022,Meatball MS 80Bx20P,EA,EUR,Mix,Meatball,A,low,Small,Maturity
+MB-0023,Meatball MM  80Bx20P,EA,EUR,Mix,Meatball,A,low,Medium,Decline
+MB-0024,Meatball Ml  80Bx20P,EA,EUR,Mix,Meatball,C,low,Large,Maturity
+MB-0025,Meatball MS Beef+Cheese,EA,EUR,Mix,Meatball,C,high,Small,Introduction
+MB-0026,Meatball MM  Beef+Cheese,EA,EUR,Mix,Meatball,A,low,Medium,Introduction
+MB-0028,Sausage BS,EA,EUR,Beef,Sausage,A,low,Small,Growth
+MB-0029,Sausage BM,EA,EUR,Beef,Sausage,A,low,Medium,Growth
+MB-0030,Sausage Bl,EA,EUR,Beef,Sausage,B,low,Large,Decline
+MB-0031,Sausage PS,EA,EUR,Pork,Sausage,A,low,Small,Introduction
+MB-0032,Sausage PM,EA,EUR,Pork,Sausage,A,medium,Medium,Decline
+MB-0033,Sausage Pl,EA,EUR,Pork,Sausage,B,low,Large,Decline
+MB-0034,Sausage LS,EA,EUR,Lamb,Sausage,A,medium,Small,Maturity
+MB-0035,Sausage LM,EA,EUR,Lamb,Sausage,A,low,Medium,Maturity
+MB-0036,Sausage Ll,EA,EUR,Lamb,Sausage,A,high,Large,Maturity
+MB-0037,Sausage TS,EA,EUR,Tofu,Sausage,A,low,Small,Maturity
+MB-0038,Sausage TM,EA,EUR,Tofu,Sausage,A,medium,Medium,Growth
+MB-0039,Sausage Tl,EA,EUR,Tofu,Sausage,C,low,Large,Decline
+MB-0040,Meatball Beef Bundle,EA,EUR,Mix,Meatball,C,medium,Small,Introduction
+MB-0041,Meatball BS XL,EA,EUR,Beef,Meatball,C,medium,Small,Growth
+MB-0042,Tomato mild,EA,EUR,Topping,Extra,C,high,Small,Maturity
+MB-0043,Tomato medium,EA,EUR,Topping,Extra,C,high,Small,Maturity
+MB-0044,Tomato hot,EA,EUR,Topping,Extra,C,medium,Small,Maturity
+MB-0045,Mustard mild,EA,EUR,Topping,Extra,C,high,Small,Growth
+MB-0046,Mustard medium,EA,EUR,Topping,Extra,C,high,Small,Decline
+MB-0047,Mustard hot,EA,EUR,Topping,Extra,C,medium,Small,Growth
+MB-0048,Meatball BS & Tomato,EA,EUR,Beef,Meatball,C,low,Small,Introduction
+MB-0049,Meatball BS & Mustard,EA,EUR,Beef,Meatball,B,low,Small,Growth
+MB-0050,Sausage BS,EA,EUR,Beef,Sausage,C,high,Small,Growth
+MB-0051,Sausage XXL,EA,EUR,Beef,Sausage,B,medium,Large,Introduction
+MB-0052,Configured Meatball,EA,EUR,Meal,Meal,,medium,,Introduction
+MB-0053,Meatball BS,EA,EUR,Beef,Meatball,A,medium,Small,Growth
+MB-0059,Sausage BS,EA,EUR,Beef,Sausage,C,high,Small,Growth
+MB-0060,Bundle,EA,EUR,Meal,Meal,A,,,Growth
+Meal-C090,Meal S,EA,EUR,Meal,Meal,A,high,Small,Growth
+Meal-C091,Meal M,EA,EUR,Meal,Meal,A,high,Medium,Growth
+Meal-C092,Meal L,EA,EUR,Meal,Meal,A,high,Large,Growth
+Meal-C093,Meal XL,EA,EUR,Meal,Meal,A,high,Large,Growth

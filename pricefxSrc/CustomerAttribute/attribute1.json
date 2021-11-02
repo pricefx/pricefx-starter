@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "CustomerGroup",
+  "labelTranslations" : {
+    "" : "Customer Group"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

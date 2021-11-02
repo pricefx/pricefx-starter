@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "Segmentation",
+  "labelTranslations" : {
+    "" : "Segmentation"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,10 @@
+{
+  "fieldName" : "key3",
+  "fieldType" : 4,
+  "label" : "ValidFrom",
+  "labelTranslations" : {
+    "" : "Valid From"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

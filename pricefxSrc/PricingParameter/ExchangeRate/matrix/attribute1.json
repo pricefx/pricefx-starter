@@ -1,0 +1,10 @@
+{
+  "fieldName" : "attribute1",
+  "fieldType" : 4,
+  "label" : "ValidTo",
+  "labelTranslations" : {
+    "" : "Valid To"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

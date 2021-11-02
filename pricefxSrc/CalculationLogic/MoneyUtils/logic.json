@@ -1,0 +1,20 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "ExchangeRate",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  } ],
+  "formulaNature" : "library",
+  "inputDescriptors" : [ ],
+  "label" : "Money Utils",
+  "status" : "ACTIVE",
+  "uniqueName" : "MoneyUtils",
+  "validAfter" : "2019-01-01"
+}

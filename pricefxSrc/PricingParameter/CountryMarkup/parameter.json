@@ -1,0 +1,11 @@
+{
+  "folder" : "Food",
+  "hideWarnings" : false,
+  "isPlasma" : false,
+  "label" : "Country Markup",
+  "status" : "ACTIVE",
+  "type" : "MATRIX",
+  "uniqueName" : "CountryMarkup",
+  "validAfter" : "2010-01-01",
+  "valueType" : "MATRIX"
+}

@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "Competition",
+  "labelTranslations" : {
+    "" : "Competition"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}

@@ -1,0 +1,9 @@
+{
+  "fieldType" : 2,
+  "label" : "ProductClass",
+  "labelTranslations" : {
+    "" : "Product Class"
+  },
+  "readOnly" : false,
+  "requiredField" : false
+}
