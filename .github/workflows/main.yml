@@ -30,5 +30,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+      - name: Install with Maven
+        run: mvn clean install
       - name: Deploy with Maven
         run: mvn --batch-mode --update-snapshots -pl pricefxSrc --settings .maven/settings.xml -P develop clean install net.pricefx.learn:pricefx-stream-maven-plugin:pricefx-deploy-all
