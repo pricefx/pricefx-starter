@@ -1,11 +1,14 @@
 <div align="center">
+    <div align="center">
+        <img src="https://pricefx.vercel.app/pricefx-logo.svg" height="64"/>
+    </div>
     <h1>Pricefx Starter Project</h1>
 </div>
 
 <div align="center">
 
-[![https://pricefx.vercel.app](https://pricefx.vercel.app/badges/developer-portal-badge.svg)]()
-[![https://pricefx.atlassian.net/wiki/spaces/KB/overview](https://pricefx.vercel.app/badges/knowledge-base-badge.svg)]()
+[![https://pricefx.vercel.app](https://pricefx.vercel.app/badges/developer-portal.svg)]()
+[![https://pricefx.atlassian.net/wiki/spaces/KB/overview](https://pricefx.vercel.app/badges/documentation.svg)]()
 [![Test & Deploy](https://github.com/pricefx/pricefx-starter/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/pricefx/pricefx-starter/actions/workflows/main.yml)
 [![issues - pricefx-starter](https://img.shields.io/github/issues/pricefx/pricefx-starter)](https://github.com/pricefx/pricefx-starter/issues)
 
@@ -59,7 +62,3 @@ If you don't already have a maven settings file, create one under `~/.m2/setting
 
 If you already have a profile, add a profile to your existing `setting.xml`.
 
-
-<div align="center">
-    <img src="https://pricefx.vercel.app/pricefx-logo.svg" height="64"/>
-</div
