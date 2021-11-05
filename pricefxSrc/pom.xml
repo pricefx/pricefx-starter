@@ -87,10 +87,6 @@
                     <partition>${pricefx-stream.partition}</partition>
                     <username>${pricefx-stream.username}</username>
                     <password>${pricefx-stream.password}</password>
-                    <!-- From parent pom.xml -->
-                    <includeMetadata>${pricefx-stream.includeMetadata}</includeMetadata>
-                    <includeData>${pricefx-stream.includeData}</includeData>
-                    <includeDocuments>${pricefx-stream.includeDocuments}</includeDocuments>
                 </configuration>
             </plugin>
         </plugins>

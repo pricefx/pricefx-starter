@@ -15,11 +15,6 @@
     </modules>
 
     <properties>
-        <!-- pricefx-stream plugin-->
-        <pricefx-stream.includeMetadata>true</pricefx-stream.includeMetadata>
-        <pricefx-stream.includeData>true</pricefx-stream.includeData>
-        <pricefx-stream.includeDocuments>true</pricefx-stream.includeDocuments>
-
         <!-- groovydoc -->
         <groovy.version>2.4.15</groovy.version>
 
