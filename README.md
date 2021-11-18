@@ -31,4 +31,4 @@ To set up your CI/CD pipelines and integrate with an existing partition, you wil
 
 ## Pricefx Stream Maven Plugin
 
-The Pricefx Stream plugin allows you to fetch/deploy/delete data from/to/on your Pricefx partition. Learn how to set up a maven profile [here](https://pricefx.atlassian.net/wiki/spaces/KB/pages/3804922316/Pricefx+Maven+Plugin).
+The Pricefx Stream plugin allows you to fetch/deploy/delete data from/to/on your Pricefx partition. Learn how to set up a maven profile [here](https://pricefx.atlassian.net/wiki/spaces/KB/pages/3808002411/Add+to+Project).
